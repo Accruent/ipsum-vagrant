@@ -11,6 +11,6 @@ We're going to set up vagrant, and install docker inside it.
 3. From the root directory (where `Vagrantfile` is located) run `vagrant up`.  This will download the Ubuntu 18.04 base image.
 
 4. When it's done run `vagrant ssh` to ssh into the virtual machine.
-5. Once inside install docker, ruby and pygmy `sudo apt-get update && sudo apt install docker.io ruby-full -y && sudo gem install pygmy`
-
+5. Once inside, install docker, ruby and pygmy `sudo apt-get update && sudo apt install docker.io ruby-full -y && sudo gem install pygmy`
+6. Install docker-compose `sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose`
    
