@@ -7,6 +7,7 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   config.vm.synced_folder "./sites", "/home/vagrant/sites/"
+  config.vm.synced_folder "~/.ssh", "/home/vagrant/.ssh/"
   #config.ssh.username = 'root'
   #config.ssh.password = 'root'
   #config.ssh.insert_key = 'true'
