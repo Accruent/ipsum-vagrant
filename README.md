@@ -12,3 +12,4 @@ We're going to set up vagrant, and install docker inside it.
 
 4. When it's done run `vagrant ssh` to ssh into the virtual machine.
 5. Once inside, run this init script to install docker, ruby, pygmy, docker-compose: `./sites/init.sh`
+6. TODO...
