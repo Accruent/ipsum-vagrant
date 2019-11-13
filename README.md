@@ -1,6 +1,12 @@
 # General
 This is a boilerplate structure to setup vagrant on windows to allow using docker projects. 
-We're going to set up vagrant, and install docker inside it.
+We're going to set up vagrant with virtualbox, and install docker inside it.
+
+# Requirements
+
+- Virtualbox: https://www.virtualbox.org/wiki/Downloads
+- Tip: make sure to configure the vagrant box to have plenty of RAM and CPU allocated, default is 1Gb which is not enough.
+To do so, after building the box, `vagrant halt` and open the VirtualBox GUI and click the settings icon for that virtual machine and navigate to System->Motherboard
 
 # Intructions
 
@@ -21,6 +27,6 @@ VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap,
 ```
 run `bcdedit /set hypervisorlaunchtype off` and restart your windows machine for it to take effect, run `vagrant up` and it should work.
 
-4. When it's done run `vagrant ssh` to ssh into the virtual machine.
+4. When it's done run `vagrant ssh` to ssh into the virtual machine (password is vagrant)
 5. Once inside, run this init script to install docker, ruby, pygmy, docker-compose: `./sites/init.sh`
 
